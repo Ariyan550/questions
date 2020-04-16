@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Customizable Dynamic Quiz Basic Demo</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="jquery.quiz-min.css" />
+  <style>
+  body { min-height: 100vh;background-image: linear-gradient(120deg, #e7eef1 0%, #ebedee 100%); font-family: 'Roboto Condensed';}
+  .container {margin: 150px auto 30px auto; max-width: 640px;}
+  h1 { text-align: center;
+  }
+  
+  .footer{
+  background:black;
+  color:white;
+  padding:30px 8px;
+  text-align:center;
+  text-transform:capitalize;
+  }
+  
+  #showCon{
+  text-align:center;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  
+  }
+  
+</style>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+  <div class="container">
+  <h2 id="showCon"></h2>
+  <h1>Some Islamic Questions</h1>
+<div id="quiz">
+  <div id="quiz-header">
+    <h1>Test your mind</h1>
+    <p><a id="quiz-home-btn">Home</a></p>
+  </div>
+  <div id="quiz-start-screen">
+    <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
+  </div>
+</div>
+</div>
+
+<footer class="footer"> 
+
+<h2 class="text-capitalize">&copy; copyright 2020 Ariyan Rumi All right reserved</h2>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="jquery.quiz-min.js"></script>
+<script>
+  $('#quiz').quiz({
+    //resultsScreen: '#results-screen',
+    //counter: false,
+    //homeButton: '#custom-home',
+    counterFormat: 'Question %current of %total',
+    questions: [
+      {
+        'q': ' এক লোকমা হারাম খেলে ৪০ দিনের ইবাদত কবুল হয় না। এ হাদিসটি কি সহিহ?',
+        'options': [
+          'এটি সহিহ হাদিস নয়',
+          'এটি সহিহ হাদিস ',
+          'মিথ্যা হাদিস নয়',
+          'একেবারেই জাল নয়'
+        ],
+        'correctIndex': 0,
+        'correctResponse': 'Correct Answer.',
+        'incorrectResponse': 'Sorry! incorrect.'
+      },
+      {
+        'q': 'তিন তালাক একসঙ্গে দেওয়ার বিধান',
+        'options': [
+          'ইসলামে নেই',
+          'ইসলামে  আছে'
+        ],
+        'correctIndex': 0,
+        'correctResponse': 'Correct Answer.',
+        'incorrectResponse': 'Sorry! incorrect.'
+      },
+      {
+        'q': 'মানুষ মারা যাওয়ার পর কবরে যে আজাব হবে, তা কোনো মানুষ বুঝতে পারে না। তবে পশু-পাখিরা নাকি বুঝতে পারে। এ কথা কতটুকু সত্য?',
+        'options': [
+          ' কথাটি সত্য নয় ',
+          ' হ্যাঁ, কথাটি সত্য'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Correct Answer.',
+        'incorrectResponse': 'Sorry! incorrect.'
+      },
+      {
+        'q': 'কফি পান করা হালাল নাকি হারাম?',
+        'options': [
+          'হালাল ',
+          'হারাম '
+        ],
+        'correctIndex': 0,
+        'correctResponse': 'Correct Answer.',
+        'incorrectResponse': 'Sorry! incorrect.'
+      },
+      {
+        'q': ' মসজিদের দেয়ালে, নামাজের জন্য ব্যবহৃত সুতরার গায়ে ও মৃতদেহ বহনকারী খাটের উপর ‘আল্লাহু’ লেখা থাকে। এর তাৎপর্য কী',
+        'options': [
+          'এটি একেবারেই তাৎপর্যপূর্ণ',
+          'এর গুরুত্ব আছে',
+          'এটি একেবারেই তাৎপর্যহীন'
+       
+        ],
+        'correctIndex': 2,
+        'correctResponse': 'Correct Answer.',
+        'incorrectResponse': 'Sorry! incorrect.'
+      },
+	    {
+        'q': 'সকল রোগের নিরাময়কারক মেডিসিন?',
+        'options': [
+          'বাইবেল',
+          'আল কোরআন',
+          'তাওরাত',
+          'গিতা'
+        ],
+        'correctIndex': 1,
+        'correctResponse': 'Correct Answer.',
+        'incorrectResponse': 'Sorry! incorrect.'
+      },
+	  
+	  {
+        'q': 'আলকুরানে  চিকিতসা বিষয়ক আয়াত আছে?',
+        'options': [
+          '২৬০',
+          '৩২০',
+          '২৪১',
+          '২৪২'
+        ],
+        'correctIndex': 2,
+        'correctResponse': 'Correct Answer.',
+        'incorrectResponse': 'Sorry! incorrect.'
+      }
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+    ]
+  });
+</script>
+</body>
+<script type="text/javascript">
+
+var confirm =prompt('What is your Name?');
+
+document.getElementById('showCon').innerHTML='Welcome ' +confirm;
+
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
